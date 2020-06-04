@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/lab-08-s",
+      "handler": "lab08.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/lab-08-s/count",
+      "handler": "lab08.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/lab-08-s/:id",
+      "handler": "lab08.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/lab-08-s",
+      "handler": "lab08.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/lab-08-s/:id",
+      "handler": "lab08.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/lab-08-s/:id",
+      "handler": "lab08.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

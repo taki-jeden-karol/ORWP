@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/vet-docs",
+      "handler": "vet-doc.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/vet-docs/count",
+      "handler": "vet-doc.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/vet-docs/:id",
+      "handler": "vet-doc.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/vet-docs",
+      "handler": "vet-doc.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/vet-docs/:id",
+      "handler": "vet-doc.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/vet-docs/:id",
+      "handler": "vet-doc.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

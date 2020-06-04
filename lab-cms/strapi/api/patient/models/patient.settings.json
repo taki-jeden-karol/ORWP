@@ -1,0 +1,23 @@
+{
+  "kind": "collectionType",
+  "collectionName": "patients",
+  "info": {
+    "name": "Patient"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true
+  },
+  "attributes": {
+    "Name_Patient": {
+      "type": "string"
+    },
+    "Kind_Patient": {
+      "type": "string"
+    },
+    "sick_lists": {
+      "via": "patient",
+      "collection": "sick-list"
+    }
+  }
+}
