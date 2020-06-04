@@ -1,0 +1,17 @@
+<div>
+    <p>Lists of sick-list</p>
+    <table>
+        <tbody>
+            <tr>
+                <td>id</td>
+                <td>name</td>
+                <td>doc</td>
+            </tr>
+            <tr *ngFor="let sicklist of sickLists">
+                <td><a routerLink="/sick-lists/{{sicklist.id}}">{{sicklist.id}}</a></td>
+                <td>{{sicklist.patient.Name_Patient}}</td>
+                <td>{{sicklist.vet_doc.Name_Doc}}</td>
+            </tr>
+        </tbody>
+    </table>
+</div>

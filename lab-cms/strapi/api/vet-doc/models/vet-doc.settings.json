@@ -1,0 +1,20 @@
+{
+  "kind": "collectionType",
+  "collectionName": "vet_docs",
+  "info": {
+    "name": "VetDoc"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true
+  },
+  "attributes": {
+    "Name_Doc": {
+      "type": "string"
+    },
+    "sick_lists": {
+      "collection": "sick-list",
+      "via": "vet_doc"
+    }
+  }
+}
