@@ -1,0 +1,21 @@
+{
+  "kind": "collectionType",
+  "collectionName": "sick_lists",
+  "info": {
+    "name": "sick-list"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true
+  },
+  "attributes": {
+    "patient": {
+      "model": "patient",
+      "via": "sick_lists"
+    },
+    "vet_doc": {
+      "via": "sick_lists",
+      "model": "vet-doc"
+    }
+  }
+}
